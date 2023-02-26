@@ -74,9 +74,6 @@ function MensajeDeError(tipoDeInput,input){
     let mensaje = "";
     tipoDeErrores.forEach(error =>{
         if(input.validity[error]){
-            console.log(error)
-            console.log(input.validity[error]);
-            console.log(mesajesError[tipoDeInput][error])
             mensaje =  mesajesError[tipoDeInput][error]
         }
     })
